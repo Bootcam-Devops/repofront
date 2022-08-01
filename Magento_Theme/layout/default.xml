@@ -2,7 +2,7 @@
     <body>
         <referenceBlock name="logo">
            <action method="setLogoFile">
-               <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+               <argument name="logo_file" xsi:type="string">images/logo_amazon.png</argument>
            </action>
         </referenceBlock>
         <referenceBlock name="advanced-search-link" remove="true"/>
