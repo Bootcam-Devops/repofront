@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="logo">
@@ -6,5 +7,7 @@
            </action>
         </referenceBlock>
         <referenceBlock name="advanced-search-link" remove="true"/>
+        <referenceBlock name="header.panel.wrapper" remove="true" />
+        <move element="store.settings.currency" destination="footer-container" before="copyright"/>
     </body>
 </page>
