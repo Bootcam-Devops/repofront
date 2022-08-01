@@ -1,14 +1,11 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="header.container">
-            <referenceBlock name="logo">
-                <action method="setLogoFile">
-                    <argument name="logo_file" xsi:type="string">images/logo.png</argument>
-                </action>
-            </referenceBlock>
-        </referenceContainer>
-    
+        <referenceBlock name="logo">
+           <action method="setLogoFile">
+               <argument name="logo_file" xsi:type="string">images/logo_amazon.png</argument>
+           </action>
+        </referenceBlock>
         <referenceBlock name="advanced-search-link" remove="true"/>
         <referenceBlock name="header.panel.wrapper" remove="true" />
         <move element="store.settings.currency" destination="footer-container" before="copyright"/>
