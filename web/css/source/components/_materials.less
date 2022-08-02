@@ -5,6 +5,8 @@
 & when (@media-common = true) {
 
     .materials {
+        background: white;
+        padding: 10px 20px;
 
         &__heading {
             font-size: 30px;
@@ -35,21 +37,40 @@
         }
 
         .slick-prev {
-            left: -80px;
+            left: 0px;
         }
 
         .slick-next {
-            right: -65px;
+            right: 0px;
         }
 
         .slick-prev, .slick-next {
             background: transparent;
             top: calc(~'50% - 20px');
-
+            visibility: hidden;
+            
             &:before {
                 font-size: 25px;
             }
 
+        }
+
+        .slick-slider:hover {
+            .slick-prev {
+                visibility: visible;
+                background: rgba(255, 255, 255, 0.756);
+                -webkit-box-shadow: 24px 0px 39px -30px rgba(0,0,0,0.91);
+                -moz-box-shadow: 24px 0px 39px -30px rgba(0,0,0,0.91);
+                box-shadow: 24px 0px 39px -30px rgba(0,0,0,0.91);
+            }
+
+            .slick-next {
+                visibility: visible;
+                background: rgba(255, 255, 255, 0.756);
+                -webkit-box-shadow: -24px 0px 39px -30px rgba(0,0,0,0.91);
+                -moz-box-shadow: -24px 0px 39px -30px rgba(0,0,0,0.91);
+                box-shadow: -24px 0px 39px -30px rgba(0,0,0,0.91);
+            }
         }
 
     }
