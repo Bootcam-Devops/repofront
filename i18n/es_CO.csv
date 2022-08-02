@@ -1,0 +1,11 @@
+Footer,"Pie de página"
+"Hope see you again.","Esperamos volver a verte pronto."
+Header,Encabezado
+"Order confirmation","Confirmación del Pedido"
+"%store_name order confirmation","Confirmación del pedido %store_name"
+"Hi %customer_name,","Hola %customer_name,"
+"Thanks for shopping with us. We will send you a confirmation once your item ships.","Gracias por comprar con nosotros. Te enviaremos una confirmación cuando tus artículos se envíen."
+"You can check the status of your order by <a href=""%account_url"">logging into your account</a>.","Puedes comprobar el estado de tu orden <a href=""%account_url"">iniciando sesión con tu cuenta</a>."
+Details,Detalles
+"Order <a href=""#"">#%increment_id</a>","Pedido <a href=""#"">#%increment_id</a>"
+"For more information about your order, contact us:","Para más información sobre tu pedido, contáctanos:"

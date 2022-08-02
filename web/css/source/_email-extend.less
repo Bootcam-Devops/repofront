@@ -1,0 +1,90 @@
+
+.wrapper {
+    .wrapper-inner{
+        .main {
+            .header {
+                padding: 10px 0 10px 0px;
+                border-bottom: 1px solid @separator-border-color;
+
+                table {
+                    width: 100%;
+
+                    .title {
+                        p {
+                            font-size: large;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+
+            .main-content {
+                padding: 0px;
+
+                .email-intro {
+                    td {
+                        padding-bottom: 0;
+
+                        div {
+                            font-size: 18px;
+                            line-height: 30px;
+                            color: @title-color;
+                        }
+                    }
+                }
+
+                .email-summary {
+                    td {
+                        padding: 10px 0 0 0;
+
+                        .title {
+                            border-bottom: 1px solid @separator-border-color;
+                            color: @title-color;
+                            font-size: 18px;
+                            margin: 1px 0 8px 0;
+                        }
+
+                        .info {
+                            color: @subtitle-color;
+                            font-size: 14px;
+                            margin: 1px 0 8px 0;
+                        }
+                    }
+                }
+
+                .email-information {
+
+                    .email-items {
+                        background-color: @items-background-color;
+                        border-top: 3px solid @items-separator-border-color;
+
+                        .subtotal, .shipping, .grand_total {
+                            th, td {
+                                background-color: @items-background-color;                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+                padding: 10px 20px 10px 0;
+
+                p {
+                    font-size: 16px;
+
+                    .store-name {
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+
+                    .additional-info {
+                        color: @subtitle-color;
+                        font-size: 10px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
