@@ -1,0 +1,34 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!--@subject {{trans "Footer"}} @-->
+<!--@vars {
+"var store.frontend_name":"Store Name"
+} @-->
+
+                    <!-- End Content -->
+                </td>
+            </tr>
+            <tr>
+                <td class="footer">
+                    <p>
+                        {{trans "Hope see you again."}}
+                        <br>
+                        <span class="store-name">{{config path="general/store_information/name"}}</span>
+                        <br>
+                        <span class="additional-info">                            
+                            {{trans "For more information about your order, contact us:"}}
+                            {{customVar code=payment_information_phone}}
+                        </span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+<!-- End wrapper table -->
+</body>

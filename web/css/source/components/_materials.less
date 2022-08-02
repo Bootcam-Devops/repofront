@@ -1,0 +1,102 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .materials {
+        background: white;
+        padding: 10px 20px;
+
+        &__heading {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__caption {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 15px;
+            margin-left: -15px;
+            display: block;
+        }
+
+        a, .alink {
+            color: #3d3d3d;
+        }
+
+        [data-content-type="image"] {
+            overflow: hidden;
+            margin-right: 15px;
+
+            img {
+                width: 100%;
+                transition: 0.5s;
+            }
+
+        }
+
+        .slick-prev {
+            left: 0px;
+        }
+
+        .slick-next {
+            right: 0px;
+        }
+
+        .slick-prev, .slick-next {
+            background: transparent;
+            top: calc(~'50% - 20px');
+            visibility: hidden;
+            
+            &:before {
+                font-size: 25px;
+            }
+
+        }
+
+        .slick-slider:hover {
+            .slick-prev {
+                visibility: visible;
+                background: rgba(255, 255, 255, 0.756);
+                -webkit-box-shadow: 24px 0px 39px -30px rgba(0,0,0,0.91);
+                -moz-box-shadow: 24px 0px 39px -30px rgba(0,0,0,0.91);
+                box-shadow: 24px 0px 39px -30px rgba(0,0,0,0.91);
+            }
+
+            .slick-next {
+                visibility: visible;
+                background: rgba(255, 255, 255, 0.756);
+                -webkit-box-shadow: -24px 0px 39px -30px rgba(0,0,0,0.91);
+                -moz-box-shadow: -24px 0px 39px -30px rgba(0,0,0,0.91);
+                box-shadow: -24px 0px 39px -30px rgba(0,0,0,0.91);
+            }
+        }
+
+    }
+
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .materials {
+
+    }
+
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .materials {
+
+    }
+
+}
