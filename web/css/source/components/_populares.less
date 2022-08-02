@@ -1,0 +1,77 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .populares {
+        
+        background-color: white;
+
+        &__heading {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__caption {
+            text-align: center;
+            font-size: 18px;
+            display: block;
+        }
+
+        a, .alink {
+            color: #3d3d3d;
+        }
+
+        [data-content-type="image"] {
+            overflow: hidden;
+            margin-right: 15px;
+            text-align: center;
+
+        }
+
+        .slick-prev {
+            left: -80px;
+        }
+
+        .slick-next {
+            right: -65px;
+        }
+
+        .slick-prev, .slick-next {
+            background: transparent;
+            top: calc(~'50% - 20px');
+
+            &:before {
+                font-size: 25px;
+            }
+
+        }
+
+    }
+
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .materials {
+
+    }
+
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .materials {
+
+    }
+
+}
